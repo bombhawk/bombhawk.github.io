@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+    <!--TITLE-->
+    <header class="header">
+      <h1>Kamryn Kramer: A Portfolio</h1>
+    </header>
+
+    <!--NAVIGATION BAR-->
+    <div class="navBar" id="navBar">
+        <a href="#hero" class="navBarLinks">Rundown</a>
+
+        <div class="dropdownContainer" id="opusDropdown" onmouseleave="hideDropdown('opus')">
+          <a href="#opuses" class="navBarLinks" onmouseover="openDropdown('opus')">Best Projects ↓</a>
+          <div class="dropdownContent" id="opusDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="gamesDropdown" onmouseleave="hideDropdown('games')">
+          <a href="#games" class="navBarLinks" onmouseover="openDropdown('games')">Games ↓</a>
+          <div class="dropdownContent" id="gamesDropdownContent">
+          </div>
+        </div>
+
+
+        <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
+          <a href="#opuses" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
+          <div class="dropdownContent" id="softwareDropdownContent">
+          </div>
+        </div>
+
+        <a href="#about" class="navBarLinks">About Me</a>
+    </div>
+  
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my best work in game development and software engineering.</p>
+        <h2>Here's what I'm working on now:</h2>
+        <a href="GamesPages/bulletHell.html"><h3>The Good, The Bad, and The Pixely</h3></a>
+        <iframe src="https://www.youtube.com/embed/DPk4uGA4AVk?autoplay=1&mute=1" width="520" allowfullscreen="allowfullscreen"></iframe>
+    </header>
+
+    
+    <!--OPUSES-->
+    <h2 id="opuses">My Best Projects:</h2>
+    <h3 class="subHead">Out of everything I've made, these are the projects that I am the most proud of. Check these out first!</h3>
+
+    <div class="carouselContainer">
+      <div class="arrow">
+        <button onclick="slideOpusLeft()">
+          <img src="Images/Arrow Left.gif" class="imgHover">
+        </button>
+      </div>
+
+      <div class="carousellSide" id="opusLeft">
+        <a href='' id="opusLeftLink">
+          <img src="" class="imgHover" style="width:60%" alt="leftImg" id="opusLeftImg">
+          <h3 id="opusLeftName"></h3>
+          <p id="opusLeftDesc"></p>
+        </a>
+      </div>
+
+      <div class="carousellMid" id="opusMid">
+        <a href='' id="opusMidLink">
+          <img src="" class="imgHover" style="width:60%" alt="midImg" id="opusMidImg">
+          <h3 id="opusMidName"></h3>
+          <p id="opusMidDesc"></p>
+        </a>
+      </div>
+
+      <div class="carousellSide" id="opusRight">
+        <a href='' id="opusRightLink">
+          <img src="" class="imgHover" style="width:60%" alt="rightImg" id="opusRightImg">
+          <h3 id="opusRightName"></h3>
+          <p id="opusRightDesc"></p>
+        </a>
+      </div>
+
+      <div class="arrow">
+        <button onclick="slideOpusRight()">
+          <img src="Images/Arrow Right.gif" class="imgHover">
+        </button>
+      </div>
+    </div>
+
+    <!--GAMES-->
+      <h2 id="games">Games:</h2>
+      <h3 class="subHead">A collection of the games I've made over the years. I began making games with the GameMaker Studio 2 engine in 2019, and have loved doing so ever since. These are all the games I've developed that I believe are worth sharing. I hope you'll have fun with them!</h3>
+    
+      <div class="carouselContainer">
+        <div class="arrow">
+          <button onclick="slideLeft()">
+            <img src="Images/Arrow Left.gif" class="imgHover">
+          </button>
+        </div>
+
+        <div class="carousellSide" id="gameLeft">
+          <a href='' id="gameLeftLink">
+            <img src="" class="imgHover" style="width:60%" alt="leftImg" id="gameLeftImg">
+            <h3 id="gameLeftName"></h3>
+            <p id="gameLeftDesc"></p>
+          </a>
+        </div>
+
+        <div class="carousellMid" id="gameMid">
+          <a href='' id="gameMidLink">
+            <img src="" class="imgHover" style="width:60%" alt="midImg" id="gameMidImg">
+            <h3 id="gameMidName"></h3>
+            <p id="gameMidDesc"></p>
+          </a>
+        </div>
+
+        <div class="carousellSide" id="gameRight">
+          <a href='' id="gameRightLink">
+            <img src="" class="imgHover" style="width:60%" alt="rightImg" id="gameRightImg">
+            <h3 id="gameRightName"></h3>
+            <p id="gameRightDesc"></p>
+          </a>
+        </div>
+
+        <div class="arrow">
+          <button onclick="slideRight()">
+            <img src="Images/Arrow Right.gif" class="imgHover">
+          </button>
+        </div>
+      </div>
+
+    <!--SOFTWARE-->
+      <h2 id="software">Software:</h2>
+      <h3 class="subHead">All of the programs I've made that I don't consider a game. They can be productivity tools, fun widgets, or just something I made because I was bored. I hope they'll prove useful!</h3>
+    
+      <div class="carouselContainer">
+        <div class="arrow">
+          <button onclick="slideSoftwareLeft()">
+            <img src="Images/Arrow Left.gif" class="imgHover">
+          </button>
+        </div>
+
+        <div class="carousellSide" id="swLeft">
+          <a href='' id="swLeftLink">
+            <img src="" class="imgHover" style="width:60%" alt="leftImg" id="swLeftImg">
+            <h3 id="swLeftName"></h3>
+            <p id="swLeftDesc"></p>
+          </a>
+        </div>
+
+        <div class="carousellMid" id="swMid">
+          <a href='' id="swMidLink">
+            <img src="" class="imgHover" style="width:60%" alt="midImg" id="swMidImg">
+            <h3 id="swMidName"></h3>
+            <p id="swMidDesc"></p>
+          </a>
+        </div>
+
+        <div class="carousellSide" id="swRight">
+          <a href='' id="swRightLink">
+            <img src="" class="imgHover" style="width:60%" alt="rightImg" id="swRightImg">
+            <h3 id="swRightName"></h3>
+            <p id="swRightDesc"></p>
+          </a>
+        </div>
+
+
+        <div class="arrow">
+          <button onclick="slideSoftwareRight()">
+            <img src="Images/Arrow Right.gif" class="imgHover">
+          </button>
+        </div>
+      </div>
+    
+  <!-- About Section -->
+    <div class="about">
+      <h3 class="footerName">About Me</h3><br>
+      <img src="Images/me.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="300">
+      <div class="w3-padding-32">
+        <h3 class="footerName"><b>Kamryn Kramer</b></h3>
+        <h6><i>Computer Science Student</i></h6>
+        <p class="footerText">I am a student at ASU working on a Bachelors Degree in Computer Science. I have been programming since 2019, mostly with experience in game development and web design. I have experience in Java, Javascript, CSS, and HTML, C++, GML, and more.</p>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-social">
+          <a href="https://github.com/bombhawk"  class="footerLink" target="_blank"> GitHub </a>
+          <a href="https://www.linkedin.com/in/kamryn-kramer-06500b345/" target="_blank">LinkedIn</a>
+          <a href="mailto:kamkramer@gmail.com" class="footerLink"> Email </a>
+          <a href="https://x.com/bombhawkinator" target="_blank" class="footerLink"> Twitter </a>
+          <a href="https://bombhawk.itch.io/" target="_blank" class="footerLink"> Itch.io </a>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <h3>&copy; 2025 Kamryn Kramer | All Rights Reserved</h3>
+      </div>
+    </footer>
+</body>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</html>
