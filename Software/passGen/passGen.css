@@ -1,0 +1,47 @@
+h1 {
+  color: #D8D2CB;
+}
+
+div {
+  padding-top: 10px;
+}
+
+div, p {
+  color: #EEEEEE;
+}
+
+button, input, select {
+  background-color: #D8D2CB;
+  color: #398AB9;
+}
+
+table {
+  border-style: solid;
+  border-color: #398AB9;
+  border-radius: 15px;
+  background-color: #1C658C;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#inputDiv {
+  padding-bottom: 15px;
+}
+
+#speacialNumberDiv {
+  padding-bottom: 15px;
+}
+
+#radioLower {
+  padding-bottom: 10px;
+}
+
+td, tr {
+ width: 300px;
+}
+
+.subHead {
+  padding-top: 30px;
+  padding-bottom: 0px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Project Spyn | Kamryn Kramer: A Portfolio</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+    <!--TITLE-->
+    <header class="header">
+      <h1>Kamryn Kramer: A Portfolio</h1>
+    </header>
+    <!--NAVIGATION BAR-->
+    <div class="navBar" id="navBar">
+        <a href="/index.html" class="navBarLinks">Home</a>
+
+        <div class="dropdownContainer" id="opusDropdown" onmouseleave="hideDropdown('opus')">
+          <a href="/index.html#opuses" class="navBarLinks" onmouseover="openDropdown('opus')">Best Projects ↓</a>
+          <div class="dropdownContent" id="opusDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="gamesDropdown" onmouseleave="hideDropdown('games')">
+          <a href="/index.html#games" class="navBarLinks" onmouseover="openDropdown('games')">Games ↓</a>
+          <div class="dropdownContent" id="gamesDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
+          <a href="/index.html#software" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
+          <div class="dropdownContent" id="softwareDropdownContent">
+          </div>
+        </div>
+    </div>
+    <!--End navbar-->
+    
+    <div class="contentContainer">
+      <h1 class="pageTitle">Project Spyn Robot (2023)</h1>
+    </div>
+
+    <div class="contentContainer">
+      <h2>Description</h2>
+      <p>For this project we were tasked to construct and program a robot in groups of four. The robot had to be able to solve a simple one line maze, recognize colors, and enter a state of manual control to pick up a "passenger". The project taught me numerous things, such as the difficulties of programming in physical spaces, how to work in a team, and how to quickly learn new systems, as I had to learn how to use Matlab and the Lego Mindstorm robot kit.</p>
+    </div>
+
+    <div class="contentContainer">
+      <h2>Final Demonstration</h2>
+      <div class="videoContainer">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/wIn1ag7eqf8"></iframe>
+        <h3><a href="https://github.com/bombhawk/FSE-Robot/blob/main/main.m">Final Git Repository</a></h3>
+      </div>
+    </div>
+
+    <div class="contentContainer">
+      <h2>Color Demonstration</h2>
+      <div class="videoContainer">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/XdHwZ8acnMs"></iframe>
+        <h3><a href="https://github.com/bombhawk/FSEColorSensor/blob/main/colorSensorMileStone.m">Color Demo Git Repository</a></h3>
+      </div>
+    </div>
+
+    <div class="contentContainer">
+      <h2>Gallery</h2>
+      <img src="/Images/croppedRobot.png" alt="Robot 1">
+      <img src="/Images/robot4.jpeg" alt="Robot 2">
+      <img src="/Images/robot2.jpeg" alt="Robot 3">
+      <img src="/Images/robot3.jpeg" alt="Robot 4">
+    </div>
+
+    <div class="learnDiv">
+      <h2>What I Learned:</h2>
+      <p class="learned">As mentioned above, this project was made using MatLab. In fact, it was my first time ever using the program, meaning I learned a lot from this project. Additionally, it was my first time programming any hardware, and it taught me how difficult doing so can be. It is also my only foray into mechanical engineering, even if it was just Lego.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-social">
+          <a href="https://github.com/bombhawk"  class="footerLink" target="_blank"> GitHub </a>
+          <a href="https://www.linkedin.com/in/kamryn-kramer-06500b345/" target="_blank">LinkedIn</a>
+          <a href="mailto:kamkramer@gmail.com" class="footerLink"> Email </a>
+          <a href="https://x.com/bombhawkinator" target="_blank" class="footerLink"> Twitter </a>
+          <a href="https://bombhawk.itch.io/" target="_blank" class="footerLink"> Itch.io </a>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <h3>&copy; 2025 Kamryn Kramer | All Rights Reserved</h3>
+      </div>
+    </footer>
+  </center>
+</body>
+  <script src="/data.js"></script>
+  <script src="/fillDropdowns.js"></script>
+</html>

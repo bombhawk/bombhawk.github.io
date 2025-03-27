@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Maze-Man | Kamryn Kramer: A Portfolio</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--TITLE-->
+  <header class="header">
+    <h1>Kamryn Kramer: A Portfolio</h1>
+  </header>
+  <!--NAVIGATION BAR-->
+  <div class="navBar" id="navBar">
+      <a href="/index.html" class="navBarLinks">Home</a>
+
+      <div class="dropdownContainer" id="opusDropdown" onmouseleave="hideDropdown('opus')">
+        <a href="/index.html#opuses" class="navBarLinks" onmouseover="openDropdown('opus')">Best Projects ↓</a>
+        <div class="dropdownContent" id="opusDropdownContent">
+        </div>
+      </div>
+
+      <div class="dropdownContainer" id="gamesDropdown" onmouseleave="hideDropdown('games')">
+        <a href="/index.html#games" class="navBarLinks" onmouseover="openDropdown('games')">Games ↓</a>
+        <div class="dropdownContent" id="gamesDropdownContent">
+        </div>
+      </div>
+
+      <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
+        <a href="/index.html#software" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
+        <div class="dropdownContent" id="softwareDropdownContent">
+        </div>
+      </div>
+    </div>
+    <!--End navbar-->
+  
+  <center>
+    <!--Title-->
+    <div class="contentContainer">
+    <h1 class="pageTitle">Maze-Man (2019-2020)</h1>
+    </div>
+      
+    <!--Game-->
+    <div class="game-container">
+      <h2> Game: </h2>
+      <iframe id="mazeMan" src="/Games/Maze-Man Web Build/index.html" name="" width="1366" height="768" frameborder="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+
+      <div class="learnDiv">
+      <h2>What I Learned:</h2>
+      <p class="learned">This is my first ever game, and my first programming project. As such, I could never accurately describe how much I learned from it. I had to work in tight contraints, teaching me cretivity and how to work around limits. I learned the basics and fundamentals of programming. Ultimately, Maze-Man will always hold a speacial place in my heart, even if it is rudimentary.</p>
+      </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-social">
+          <a href="https://github.com/bombhawk"  class="footerLink" target="_blank"> GitHub </a>
+          <a href="https://www.linkedin.com/in/kamryn-kramer-06500b345/" target="_blank">LinkedIn</a>
+          <a href="mailto:kamkramer@gmail.com" class="footerLink"> Email </a>
+          <a href="https://x.com/bombhawkinator" target="_blank" class="footerLink"> Twitter </a>
+          <a href="https://bombhawk.itch.io/" target="_blank" class="footerLink"> Itch.io </a>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <h3>&copy; 2025 Kamryn Kramer | All Rights Reserved</h3>
+      </div>
+    </footer>
+    </center>
+</body>
+  <script src="/data.js"></script>
+  <script src="/fillDropdowns.js"></script>
+</html>

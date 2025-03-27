@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Good, The Bad, and The Pixely | Kamryn Kramer: A Portfolio</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--TITLE-->
+  <header class="header">
+    <h1>Kamryn Kramer: A Portfolio</h1>
+  </header>
+  <!--NAVIGATION BAR-->
+  <div class="navBar" id="navBar">
+      <a href="/index.html" class="navBarLinks">Home</a>
+
+      <div class="dropdownContainer" id="opusDropdown" onmouseleave="hideDropdown('opus')">
+        <a href="/index.html#opuses" class="navBarLinks" onmouseover="openDropdown('opus')">Best Projects ↓</a>
+        <div class="dropdownContent" id="opusDropdownContent">
+        </div>
+      </div>
+
+      <div class="dropdownContainer" id="gamesDropdown" onmouseleave="hideDropdown('games')">
+        <a href="/index.html#games" class="navBarLinks" onmouseover="openDropdown('games')">Games ↓</a>
+        <div class="dropdownContent" id="gamesDropdownContent">
+        </div>
+      </div>
+
+      <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
+        <a href="/index.html#software" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
+        <div class="dropdownContent" id="softwareDropdownContent">
+        </div>
+      </div>
+  </div>
+  <!--End navbar-->
+  
+  <center>
+    <!--Title-->
+    <div class="contentContainer">
+      <h1 class="pageTitle">The Good, The Bad, and The Pixely (2024-2025)</h1>
+    </div>
+    
+    <!--Bullet Hell Game-->
+    <div class="game-container">
+      <h2>Game:</h2>
+      <a href="https://bombhawk.itch.io/good-bad-and-pixely"><h3>(For the best experience (sound and properly upscaled visuals) please click here to go to itch.io)</h3></a>
+      <iframe id="bulletHell" src="/Games/Bullet Hell Build 5 Mute Web/index.html" width="1366" height="768" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <!--Playthrough Video-->
+    <div class="contentContainer" style="max-width: 720px;">
+      <h2>Playthrough:</h2>
+      <iframe src="https://www.youtube.com/embed/YWFh47bzk18?autoplay=1&mute=1" width="520" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+
+    <!--Development Doc-->
+    <div class="contentContainer" style="max-width: 850px;">
+      <h2>Development:</h2>
+      <iframe width="840" height="630" style="border-radius: 10px;" src="https://docs.google.com/document/d/1xJJezw6oZxQ0IS_Gnb7Pp4u10tDgCCLO5aDzv96YOxs/edit?usp=sharing">        </iframe>
+    </div>  
+
+    <!--What I Learned Section-->
+    <div class="learnDiv">
+    <h2>What I Learned:</h2>
+    <p class="learned">At time of completion, this is the largest single project I have ever worked on. It represents roughly 7,000 lines of code and 500 hours of my time. Because of this, it's nearly impossible to list everything it taught me. I learned how to execute a plan for a large scale project, the importance of documenting your work. This was the first project I've worked on large enough that comments were truly neccesary. Overall, this project has made me both a better programmer and game developer.</p>
+      </div>
+    </body>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+      <div class="footer-social">
+        <a href="https://github.com/bombhawk"  class="footerLink" target="_blank"> GitHub </a>
+        <a href="https://www.linkedin.com/in/kamryn-kramer-06500b345/" target="_blank">LinkedIn</a>
+        <a href="mailto:kamkramer@gmail.com" class="footerLink"> Email </a>
+        <a href="https://x.com/bombhawkinator" target="_blank" class="footerLink"> Twitter </a>
+        <a href="https://bombhawk.itch.io/" target="_blank" class="footerLink"> Itch.io </a>
+      </div>
+    </div>
+
+    <div class="footerBottom">
+      <h3>&copy; 2025 Kamryn Kramer | All Rights Reserved</h3>
+    </div>
+  </footer>
+  </center>
+</body>
+  <script src="/data.js"></script>
+  <script src="/fillDropdowns.js"></script>
+</html>

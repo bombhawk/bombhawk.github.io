@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Automatic Pool Water Leveler | Kamryn Kramer: A Portfolio</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+    <!--TITLE-->
+    <header class="header">
+      <h1>Kamryn Kramer: A Portfolio</h1>
+    </header>
+    <!--NAVIGATION BAR-->
+    <div class="navBar" id="navBar">
+        <a href="/index.html" class="navBarLinks">Home</a>
+
+        <div class="dropdownContainer" id="opusDropdown" onmouseleave="hideDropdown('opus')">
+          <a href="/index.html#opuses" class="navBarLinks" onmouseover="openDropdown('opus')">Best Projects ↓</a>
+          <div class="dropdownContent" id="opusDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="gamesDropdown" onmouseleave="hideDropdown('games')">
+          <a href="/index.html#games" class="navBarLinks" onmouseover="openDropdown('games')">Games ↓</a>
+          <div class="dropdownContent" id="gamesDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
+          <a href="/index.html#software" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
+          <div class="dropdownContent" id="softwareDropdownContent">
+          </div>
+        </div>
+    </div>
+    <!--End navbar-->
+    
+    <div class="contentContainer">
+      <h1 class="pageTitle">Automatic Pool Water Leveler (2024)</h1>
+    </div>
+    
+    <div class="contentContainer">
+      <h2>Description</h2>
+      <p>For this project I was tasked to design a circuit that would take input in the form of the water level of a pool and fill the pool either rapdily or slowly to reach the desired level.</p>
+    </div>
+      
+    <div class="contentContainer">
+      <h2>Final Circuit</h2>
+      <img src="/Images/capstoneCircuitFinal.png" alt="Circuit" width="500">
+    </div>
+      
+    <div class="contentContainer">
+      <h2>Demonstration</h2>
+      <iframe width="420" height="315" src="https://youtube.com/embed/a8X9tEVJi3Q"></iframe>
+    </div>
+      
+    <div class="learnDiv">
+      <h2>What I Learned:</h2>
+      <p class="learned">This project was the culmination of a semester of learning. It helped solidify my understanding of circuits and how to construct them, something fundemental to the field of Computer Science.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-social">
+          <a href="https://github.com/bombhawk"  class="footerLink" target="_blank"> GitHub </a>
+          <a href="https://www.linkedin.com/in/kamryn-kramer-06500b345/" target="_blank">LinkedIn</a>
+          <a href="mailto:kamkramer@gmail.com" class="footerLink"> Email </a>
+          <a href="https://x.com/bombhawkinator" target="_blank" class="footerLink"> Twitter </a>
+          <a href="https://bombhawk.itch.io/" target="_blank" class="footerLink"> Itch.io </a>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <h3>&copy; 2025 Kamryn Kramer | All Rights Reserved</h3>
+      </div>
+    </footer>
+  </center>
+</body>
+  <script src="/data.js"></script>
+  <script src="/fillDropdowns.js"></script>
+</html>

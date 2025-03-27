@@ -1,0 +1,27 @@
+/*To Do List CSS*/
+.toDoButton {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.toDoP {
+  font-size: 20px;
+  color: #04AA6D;
+}
+
+.toDoContainer {
+  background-color: #e7e7e7;
+  padding-top: 20px;
+  padding-bottom: 30%;
+  border-radius: 10px;
+}
+
+body {
+  color: #4A6781;
+}

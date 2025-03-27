@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wordle | Kamryn Kramer: A Portfolio</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <center>
+    <!--TITLE-->
+    <header class="header">
+      <h1>Kamryn Kramer: A Portfolio</h1>
+    </header>
+    <!--NAVIGATION BAR-->
+    <div class="navBar" id="navBar">
+        <a href="/index.html" class="navBarLinks">Home</a>
+
+        <div class="dropdownContainer" id="opusDropdown" onmouseleave="hideDropdown('opus')">
+          <a href="/index.html#opuses" class="navBarLinks" onmouseover="openDropdown('opus')">Best Projects ↓</a>
+          <div class="dropdownContent" id="opusDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="gamesDropdown" onmouseleave="hideDropdown('games')">
+          <a href="/index.html#games" class="navBarLinks" onmouseover="openDropdown('games')">Games ↓</a>
+          <div class="dropdownContent" id="gamesDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
+          <a href="/index.html#software" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
+          <div class="dropdownContent" id="softwareDropdownContent">
+          </div>
+        </div>
+      </div>
+      <!--End navbar-->
+    
+    <div class="contentContainer">
+      <h1 class="pageTitle">Wordle Remake (2025)</h1>
+    </div>
+  <div class="wordleBody">
+  <div class="contentContainer">
+    <h2>Game:</h2>
+  <div class="wordleHTML">
+        <h1 class="wordleHeader">Wordle</h1>
+        <button class="wordleButton" onclick="reset()">New Word</button>
+        <table class="wordleTable">
+          <tr class="wordleRow" id="row1">
+            <td class="wordleCol"><div class="tableCell" id="11"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="12"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="13"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="14"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="15"></div></td>
+          </tr>
+          <tr class="wordleRow" id="row2">
+            <td class="wordleCol"><div class="tableCell" id="21"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="22"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="23"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="24"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="25"></div></td>
+          </tr>
+          <tr class="wordleRow" id="row3">
+            <td class="wordleCol"><div class="tableCell" id="31"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="32"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="33"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="34"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="35"></div></td>
+          </tr>
+          <tr class="wordleRow" id="row4">
+            <td class="wordleCol"><div class="tableCell" id="41"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="42"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="43"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="44"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="45"></div></td>
+          </tr>
+          <tr class="wordleRow" id="row5">
+            <td class="wordleCol"><div class="tableCell" id="51"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="52"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="53"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="54"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="55"></div></td>
+          </tr>
+          <tr class="wordleRow" id="row6">
+            <td class="wordleCol"><div class="tableCell" id="61"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="62"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="63"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="64"></div></td>
+            <td class="wordleCol"><div class="tableCell" id="65"></div></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td><div onclick="keyPressed('q')" class="kbCell" id="q">Q</div></td>
+            <td><div onclick="keyPressed('w')" class="kbCell" id="w">W</div></td>
+            <td><div onclick="keyPressed('e')" class="kbCell" id="e">E</div></td>
+            <td><div onclick="keyPressed('r')" class="kbCell" id="r">R</div></td>
+            <td><div onclick="keyPressed('t')" class="kbCell" id="t">T</div></td>
+            <td><div onclick="keyPressed('y')" class="kbCell" id="y">Y</div></td>
+            <td><div onclick="keyPressed('u')" class="kbCell" id="u">U</div></td>
+            <td><div onclick="keyPressed('i')" class="kbCell" id="i">I</div></td>
+            <td><div onclick="keyPressed('o')" class="kbCell" id="o">O</div></td>
+            <td><div onclick="keyPressed('p')" class="kbCell" id="p">P</div></td>
+          </tr>
+          <tr>
+            <td><div onclick="keyPressed('a')" class="kbCell" id="a">A</div></td>
+            <td><div onclick="keyPressed('s')" class="kbCell" id="s">S</div></td>
+            <td><div onclick="keyPressed('d')" class="kbCell" id="d">D</div></td>
+            <td><div onclick="keyPressed('f')" class="kbCell" id="f">F</div></td>
+            <td><div onclick="keyPressed('g')" class="kbCell" id="g">G</div></td>
+            <td><div onclick="keyPressed('h')" class="kbCell" id="h">H</div></td>
+            <td><div onclick="keyPressed('j')" class="kbCell" id="j">J</div></td>
+            <td><div onclick="keyPressed('k')" class="kbCell" id="k">K</div></td>
+            <td><div onclick="keyPressed('l')" class="kbCell" id="l">L</div></td>
+          </tr>
+          <tr>
+            <td><div style="font-size: 10px;" id="Enter" onclick="keyPressed('Enter')" class="kbCell">ENTER</div></td>
+            <td><div onclick="keyPressed('z')" class="kbCell" id="z">Z</div></td>
+            <td><div onclick="keyPressed('x')" class="kbCell" id="x">X</div></td>
+            <td><div onclick="keyPressed('c')" class="kbCell" id="c">C</div></td>
+            <td><div onclick="keyPressed('v')" class="kbCell" id="v">V</div></td>
+            <td><div onclick="keyPressed('b')" class="kbCell" id="b">B</div></td>
+            <td><div onclick="keyPressed('n')" class="kbCell" id="n">N</div></td>
+            <td><div onclick="keyPressed('m')" class="kbCell" id="m">M</div></td>
+            <td><div style="font-size: 10px;" id="Backspace" onclick="keyPressed('Backspace')" class="kbCell">BACK</div></td>
+          </tr>
+        </table>
+    </div>
+  </div>
+  </div>
+    <div class="learnDiv">
+      <h2>What I Learned:</h2>
+        <p class="learned">This project is actually my second time remaking Wordle. I first did so back in 2022, when the game was at its peak popularity. Remaking a project like this showed me how far I truly have come. What I chipped away at over the course of roughly two weeks originally I made in about two days the second time around. Although I didn't learn too much from this project, it showed me how far I have come in the past few years, something I belive is invaluable.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-social">
+          <a href="https://github.com/bombhawk"  class="footerLink" target="_blank"> GitHub </a>
+          <a href="https://www.linkedin.com/in/kamryn-kramer-06500b345/" target="_blank">LinkedIn</a>
+          <a href="mailto:kamkramer@gmail.com" class="footerLink"> Email </a>
+          <a href="https://x.com/bombhawkinator" target="_blank" class="footerLink"> Twitter </a>
+          <a href="https://bombhawk.itch.io/" target="_blank" class="footerLink"> Itch.io </a>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <h3>&copy; 2025 Kamryn Kramer | All Rights Reserved</h3>
+      </div>
+    </footer>
+</center>
+</body>
+  <script src="words.js"></script>
+  <script src="script.js"></script>
+  <script src="/data.js"></script>
+  <script src="/fillDropdowns.js""></script>
+</html>

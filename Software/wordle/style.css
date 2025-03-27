@@ -1,0 +1,127 @@
+.wordleBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #4A6781; /* Correct Background */
+  padding: 20px;
+}
+
+.wordleHTML {
+  max-width: 450px;
+  width: 100%;
+  min-height: 600px;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  background-color: #121213;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wordleTable {
+  margin-left: 70px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  gap: 5px; /* Consistent spacing */
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.wordleRow {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.tableCell {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #3a3a3c;
+  background-color: #121213;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keyboard Layout */
+.kbContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.kbRow {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  width: 100%;
+}
+
+/* Fixing Key Size */
+.kbCell {
+  width: 28px; /* Smaller key width */
+  height: 40px;
+  background-color: #3a3a3c;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  padding: 5px;
+}
+
+/* Adjusting Enter and Backspace */
+.kbCell#Enter,
+.kbCell#Backspace {
+  width: 40px; /* More compact */
+  font-size: 0.9rem;
+}
+
+.kbCell:hover {
+  background-color: #575759;
+}
+
+/* Button Styling */
+.wordleButton {
+  width: 200px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #3a3a3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background 0.2s ease-in-out;
+}
+
+.wordleButton:hover {
+  background-color: #575759;
+}
+
+
+
+
+

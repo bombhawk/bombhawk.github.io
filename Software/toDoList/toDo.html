@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>To Do List | Kamryn Kramer: A Portfolio</title>
+  <link href="/style.css" rel="stylesheet" type="text/css" />
+  <link href="toDo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <center>
+    <!--TITLE-->
+    <header class="header">
+      <h1>Kamryn Kramer: A Portfolio</h1>
+    </header>
+    <!--NAVIGATION BAR-->
+    <div class="navBar" id="navBar">
+        <a href="/index.html" class="navBarLinks">Home</a>
+
+        <div class="dropdownContainer" id="opusDropdown" onmouseleave="hideDropdown('opus')">
+          <a href="/index.html#opuses" class="navBarLinks" onmouseover="openDropdown('opus')">Best Projects ↓</a>
+          <div class="dropdownContent" id="opusDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="gamesDropdown" onmouseleave="hideDropdown('games')">
+          <a href="/index.html#games" class="navBarLinks" onmouseover="openDropdown('games')">Games ↓</a>
+          <div class="dropdownContent" id="gamesDropdownContent">
+          </div>
+        </div>
+
+        <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
+          <a href="/index.html#software" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
+          <div class="dropdownContent" id="softwareDropdownContent">
+          </div>
+        </div>
+      </div>
+      <!--End navbar-->
+    
+    <div class="contentContainer">
+    <h1 class="pageTitle">To Do List (2025)</h1>
+    </div>
+
+    <div class="contentContainer">
+      <h2>To Do List:</h2>
+      <div class="toDoContainer">
+        <button class="toDoButton" onclick="addItem()">Add Item</button>
+        <button class="toDoButton" onclick="removeNum(gIndex)">Remove Item by Number</button>
+        <button class="toDoButton" onclick="removeName(name)">Remove Item by Name</button>
+        
+        <p class = "toDoP" id="list"></p>
+      </div>
+    </div>
+
+    <div class="learnDiv">
+      <h2>What I Learned:</h2>
+      <p class="learned">This was my first project in Javascript in about 3 years. It helped  me relearn the basics of the language, as well as brush up on my array manipulation. Although it is not technically impressive, it was a crucial step on the path to the development of my later projects, such as my Wordle remake and this website itself.</p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-social">
+          <a href="https://github.com/bombhawk"  class="footerLink" target="_blank"> GitHub </a>
+          <a href="https://www.linkedin.com/in/kamryn-kramer-06500b345/" target="_blank">LinkedIn</a>
+          <a href="mailto:kamkramer@gmail.com" class="footerLink"> Email </a>
+          <a href="https://x.com/bombhawkinator" target="_blank" class="footerLink"> Twitter </a>
+          <a href="https://bombhawk.itch.io/" target="_blank" class="footerLink"> Itch.io </a>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <h3>&copy; 2025 Kamryn Kramer | All Rights Reserved</h3>
+      </div>
+    </footer>
+  </center>
+</body>
+  <script src="toDo.js"></script>
+  <script src="/data.js"></script>
+  <script src="/fillDropdowns.js"></script>
+</html>
