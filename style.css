@@ -1,7 +1,7 @@
 body {
   padding: 0%;
   margin: 0%;
-  background-color: #6A86A8;
+  background-color: #4A6781;
 }
 
 /*Header*/
@@ -68,33 +68,85 @@ body {
   color: yellow;
 }
 
-
-/*Hero Section*/
+/* Hero Section */
 .hero {
-  background: linear-gradient(to bottom right, #ADD8E6, #4682B4);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
   color: #F1F6F9;
-  padding: 100px 20px;
-  padding-top: 25px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh;
+  object-fit: cover; 
+  z-index: 0; 
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+}
+.hero h1,
+.hero p,
+.hero h2,
+.hero a {
+  position: relative;
+  z-index: 2;
+  color: #FFF; 
+  text-align: center; 
+  max-width: 80%;
+  margin: 0 auto; 
 }
 .hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+  font-size: 4em; 
+  margin-bottom: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+.hero h2 {
+  font-size: 2.5em;
+  margin-top: 20px;
 }
 .hero p {
   font-size: 1.5em;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 700px; 
+  margin: 10px auto; 
   line-height: 1.5;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
-.hero iframe {
-  max-width: 100%;
-  height: auto;
+.hero a {
+  display: inline-block;
+  background: #FFD700;
+  color: #14274E;
+  padding: 12px 24px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
 }
+.hero a:hover {
+  background: #FFA500;
+  color: #FFF;
+}
+
 
 /*Text Styling*/
 h2 {
@@ -142,6 +194,9 @@ img {
   padding-bottom: 20%;
   padding-top: 15%;
 }
+.carouselContainer p {
+  color: #D3D3D3;
+}
 .arrow {
   width: 10%;
   text-align: center;
@@ -159,13 +214,6 @@ img {
   padding-left: 25%;
   padding-right: 25%;
   padding-bottom: 50px;
-}
-
-.game-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 iframe {
@@ -215,7 +263,7 @@ h3, p {
   padding-left: 1%;
 }
 .footerName {
-  font-size: 20px;
+  font-size: 40px;
 }
 .footer {
   margin-top: auto;
@@ -225,4 +273,75 @@ h3, p {
   padding-bottom: 0;
   border: none;
   margin: 0;
+}
+
+/*Subpage Styling*/
+.learnDiv {
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ADD8E6, #6CA6CD);
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  max-width: 900px;
+  line-height: 1.8;
+  transition: transform 0.3s ease;
+}
+.learnDiv:hover {
+  transform: translateY(-5px);
+}
+.pageTitle {
+  font-size: 3em;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #F1F6F9;
+}
+.contentContainer {
+  background: linear-gradient(135deg, #ADD8E6, #6CA6CD);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  transition: box-shadow 0.3s ease;
+}
+.contentContainer:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.contentContainer iframe {
+  display: inline-block; 
+  max-width: 100%;
+  width: 100%; 
+  margin: 0 auto; 
+  border-radius: 15px;
+}
+.contentContainer:hover, .learnDiv:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.game-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  background-color: #ADD8E6;
+  border: 10px solid #ADD8E6; /* Keep a clean, even border */
+  padding: 20px; /* Add padding for breathing room */
+  margin: 20px auto; /* Center the entire game container */
+  box-sizing: border-box; /* Ensure padding and border are included */
+  width: 100%;
+  max-width: 1366px; /* Restrict max width */
+  border-radius: 10px; /* Keep the rounded corners */
+}
+.game-container iframe {
+  width: 100%; /* Responsive iframe width */
+  max-width: 1366px; /* Ensure iframe never exceeds this width */
+  height: 768px; /* Fixed height for iframe */
+  border: none; /* Remove iframe border */
+  border-radius: 10px; /* Rounded corners for iframe */
+}
+.game-container h2 {
+  margin-bottom: 20px; /* Space between the title and the iframe */
+  text-align: center; /* Ensure the title is centered */
 }
