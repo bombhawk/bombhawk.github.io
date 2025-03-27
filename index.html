@@ -31,7 +31,6 @@
           </div>
         </div>
 
-
         <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
           <a href="#opuses" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
           <div class="dropdownContent" id="softwareDropdownContent">
@@ -43,11 +42,19 @@
   
     <!-- Hero Section -->
     <header class="hero" id="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my best work in game development and software engineering.</p>
-        <h2>Here's what I'm working on now:</h2>
-        <a href="GamesPages/bulletHell.html"><h3>The Good, The Bad, and The Pixely</h3></a>
-        <iframe src="https://www.youtube.com/embed/DPk4uGA4AVk?autoplay=1&mute=1" width="520" allowfullscreen="allowfullscreen"></iframe>
+        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="Videos/croppedSizzleReel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Showcasing my best work in game development and software engineering.</p>
+            <h2>Here's what I'm working on now:</h2>
+            <a href="GamesPages/bulletHell.html">
+                <h3>The Good, The Bad, and The Pixely</h3>
+            </a>
+        </div>
     </header>
 
     
@@ -93,6 +100,8 @@
       </div>
     </div>
 
+    <hr>
+    
     <!--GAMES-->
       <h2 id="games">Games:</h2>
       <h3 class="subHead">A collection of the games I've made over the years. I began making games with the GameMaker Studio 2 engine in 2019, and have loved doing so ever since. These are all the games I've developed that I believe are worth sharing. I hope you'll have fun with them!</h3>
@@ -135,6 +144,8 @@
         </div>
       </div>
 
+    <hr>
+    
     <!--SOFTWARE-->
       <h2 id="software">Software:</h2>
       <h3 class="subHead">All of the programs I've made that I don't consider a game. They can be productivity tools, fun widgets, or just something I made because I was bored. I hope they'll prove useful!</h3>
@@ -179,7 +190,7 @@
       </div>
     
   <!-- About Section -->
-    <div class="about">
+    <div id="about" class="about">
       <h3 class="footerName">About Me</h3><br>
       <img src="Images/me.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="300">
       <div class="w3-padding-32">
