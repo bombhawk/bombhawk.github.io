@@ -26,48 +26,50 @@ body {
   top: 0;
   display: flex;
   justify-content: center; /* Centers items horizontally */
-  align-items: center; /* Ensures vertical alignment */
+  align-items: center; /* Aligns items vertically */
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
-  height: auto;
-  gap: 20px; /* Adds spacing between navbar items */
+  height: 60px; /* Ensure a consistent navbar height */
+  gap: 20px; /* Add even spacing between items */
 }
 .navBarLinks {
   text-decoration: none;
   color: #F1F6F9;
   font-size: 1.5em;
+  padding: 10px 20px; /* Even spacing around links */
   transition: color 0.3s, background-color 0.3s;
-  padding: 10px 15px; /* Ensures consistent spacing */
-  display: inline-block; /* Ensures links remain inline */
 }
 .dropdownContainer {
   position: relative;
-  display: flex; /* Keep it inline within navbar */
-  align-items: center; /* Align dropdown button with links */
+  display: flex; /* Ensures the container follows flex properties */
+  align-items: center; /* Aligns it with other navbar items */
+  padding: 10px 20px; /* Ensure spacing matches other links */
   cursor: pointer;
 }
 .dropdownContent {
   display: none;
   position: absolute;
+  top: 100%; /* Ensures it appears below the navbar */
   left: 0;
-  top: 100%; /* Ensures dropdown appears below the link */
   background-color: lightblue;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px;
   z-index: 10;
+  width: 150px; /* Adjust width for better spacing */
 }
 .dropdownContent.show {
   display: block;
 }
 .dropdownContent a {
   display: block;
-  text-decoration: none;
-  padding: 8px 12px;
+  padding: 8px 10px;
+  text-decoration: underline;
 }
 .dropdownContent a:hover {
   color: yellow;
 }
+
 
 
 /* Hero Section */
