@@ -25,34 +25,33 @@ body {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Ensures vertical alignment */
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 10;
-  border-bottom: none;
   height: auto;
+  gap: 20px; /* Adds spacing between navbar items */
 }
 .navBarLinks {
   text-decoration: none;
   color: #F1F6F9;
   font-size: 1.5em;
   transition: color 0.3s, background-color 0.3s;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.navBarLinks:hover {
-  color: #FFD700;
-  background-color: transparent;
-  text-decoration: underline;
+  padding: 10px 15px; /* Ensures consistent spacing */
+  display: inline-block; /* Ensures links remain inline */
 }
 .dropdownContainer {
   position: relative;
-  display: inline-block;
+  display: flex; /* Keep it inline within navbar */
+  align-items: center; /* Align dropdown button with links */
   cursor: pointer;
 }
 .dropdownContent {
   display: none;
   position: absolute;
+  left: 0;
+  top: 100%; /* Ensures dropdown appears below the link */
   background-color: lightblue;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -61,12 +60,15 @@ body {
 .dropdownContent.show {
   display: block;
 }
-.dropdownContent {
-  text-decoration: underline;
+.dropdownContent a {
+  display: block;
+  text-decoration: none;
+  padding: 8px 12px;
 }
 .dropdownContent a:hover {
   color: yellow;
 }
+
 
 /* Hero Section */
 .hero {
