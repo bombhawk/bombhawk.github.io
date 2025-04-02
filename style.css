@@ -322,26 +322,27 @@ h3, p {
 }
 .game-container {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
   background-color: #ADD8E6;
-  border: 10px solid #ADD8E6; /* Keep a clean, even border */
-  padding: 20px; /* Add padding for breathing room */
-  margin: 20px auto; /* Center the entire game container */
-  box-sizing: border-box; /* Ensure padding and border are included */
+  border: 10px solid #ADD8E6; 
+  padding: 20px; 
+  margin: 20px auto; 
+  box-sizing: border-box; 
   width: 100%;
-  max-width: 1366px; /* Restrict max width */
-  border-radius: 10px; /* Keep the rounded corners */
+  max-width: 900px; 
+  border-radius: 10px; 
 }
 .game-container iframe {
-  width: 100%; /* Responsive iframe width */
-  max-width: 1366px; /* Ensure iframe never exceeds this width */
-  height: 768px; /* Fixed height for iframe */
-  border: none; /* Remove iframe border */
-  border-radius: 10px; /* Rounded corners for iframe */
+  width: 90%; 
+  max-width: 900px; 
+  aspect-ratio: 16 / 9; 
+  height: auto; 
+  border: none; 
+  border-radius: 10px; 
 }
 .game-container h2 {
-  margin-bottom: 20px; /* Space between the title and the iframe */
-  text-align: center; /* Ensure the title is centered */
+  margin-bottom: 20px;
+  text-align: center;
 }
