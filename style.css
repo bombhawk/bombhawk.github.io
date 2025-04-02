@@ -323,25 +323,23 @@ h3, p {
 .game-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; 
   align-items: center; 
   background-color: #ADD8E6;
-  border: 10px solid #ADD8E6; 
-  padding: 20px; 
+  border: 10px solid #ADD8E6;
+  padding: 20px;
   margin: 20px auto;
   box-sizing: border-box;
   width: 100%;
-  max-width: 900px;
-  border-radius: 10px; 
-  overflow: hidden; 
+  max-width: 1366px;
+  border-radius: 10px;
 }
 .game-container iframe {
-  width: auto;
-  height: auto;
-  border: none;
-  border-radius: 10px; 
-  transform: scale(0.7);
-  transform-origin: top left;
+  width: 100%;
+  max-width: 1366px;
+  height: 768px;
+  border: none; 
+  border-radius: 10px;
 }
 .game-container h2 {
   margin-bottom: 20px;
