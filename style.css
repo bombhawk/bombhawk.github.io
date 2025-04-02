@@ -322,25 +322,26 @@ h3, p {
 }
 .game-container {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center; 
   background-color: #ADD8E6;
   border: 10px solid #ADD8E6; 
   padding: 20px; 
-  margin: 20px auto; 
-  box-sizing: border-box; 
+  margin: 20px auto;
+  box-sizing: border-box;
   width: 100%;
-  max-width: 900px; 
+  max-width: 900px;
   border-radius: 10px; 
+  overflow: hidden; 
 }
 .game-container iframe {
-  width: 90%; 
-  max-width: 900px; 
-  aspect-ratio: 16 / 9; 
-  height: auto; 
-  border: none; 
+  width: auto;
+  height: auto;
+  border: none;
   border-radius: 10px; 
+  transform: scale(0.7);
+  transform-origin: top left;
 }
 .game-container h2 {
   margin-bottom: 20px;
