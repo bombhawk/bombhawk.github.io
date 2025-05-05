@@ -10,6 +10,7 @@ let opuses = [
 //Games array
 let games = [
   {link:"/GamesPages/bulletHell.html", image:"Images/marcArt.jpg", name:"The Good, The Bad, and The Pixely (2024-2025)", description:"A top-down shooter with an emphasis on boss fights I started developing during the summer of 2024."},
+  {link:"/GamesPages/stickninja.html", image:"Images/mazeMan cover.png", name:"Stick Ninja (2025)", description:"A small platformer game I made for my game development class final project."},
   {link:"/GamesPages/gomoku.html", image:"Images/gomokuImage.png", name:"Gomoku (2025)", description:"A game that started as a small class project but became my first foray into artificial intelligence."},
   {link:"/GamesPages/paintGame.html", image:"Images/WarholWareCoverArt.png", name:"Warhol Ware (2022)", description:"A collection of mini-games I made in 48 hours using MS Paint for all art in 2022."},
   {link:"/GamesPages/christmas.html", image:"Images/christmasCover.png", name:"The Fight Before Christmas (2020)", description:"A game I made working daily during December of 2020."},
