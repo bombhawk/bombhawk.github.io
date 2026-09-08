@@ -9,58 +9,33 @@
 </head>
 
 <body>
-  <!--TITLE-->
-  <header class="header">
-    <h1>Kamryn Kramer: A Portfolio</h1>
-  </header>
-  <!--NAVIGATION BAR-->
-  <div class="navBar" id="navBar">
-      <a href="/index.html" class="navBarLinks">Home</a>
+    <!--Header-->
+    <div id="headerFillIn"></div>
 
-      <div class="dropdownContainer" id="opusDropdown" onmouseleave="hideDropdown('opus')">
-        <a href="/index.html#opuses" class="navBarLinks" onmouseover="openDropdown('opus')">Best Projects ↓</a>
-        <div class="dropdownContent" id="opusDropdownContent">
+    <center>
+        <!--Title-->
+        <div class="contentContainer">
+            <h1 class="pageTitle">Gomoku (2025)</h1>
         </div>
-      </div>
 
-      <div class="dropdownContainer" id="gamesDropdown" onmouseleave="hideDropdown('games')">
-        <a href="/index.html#games" class="navBarLinks" onmouseover="openDropdown('games')">Games ↓</a>
-        <div class="dropdownContent" id="gamesDropdownContent">
+        <!--Game-->
+        <div class="game-container">
+            <h2> Game: </h2>
+            <iframe id="gomoku" src="/Games/Gomoku Web Build/" name="" width="640" height="480" frameborder="0" marginheight="0" scrolling="no"></iframe>
         </div>
-      </div>
 
-      <div class="dropdownContainer" id="softwareDropdown" onmouseleave="hideDropdown('software')">
-        <a href="/index.html#software" class="navBarLinks" onmouseover="openDropdown('software')">Software ↓</a>
-        <div class="dropdownContent" id="softwareDropdownContent">
+        <!--What I learned-->
+        <div class="learnDiv">
+            <h2>What I Learned:</h2>
+            <p class="learned">While some projects do not have a clear learning focus, this is not one of them. The focus of this game was the AI. Over 500 lines, it is the most complicated artificial intelligence I have ever created. I take pride in the fact that it is difficult to beat. This project taught me so much about the development of computer intelligence, and I will remember it fondly for that reason.</p>
         </div>
-      </div>
-    </div>
-    <!--End navbar-->
-  
-  <center>
-      <!--Title-->
-      <div class="contentContainer">
-          <h1 class="pageTitle">Gomoku (2025)</h1>
-      </div>
 
-      <!--Game-->
-      <div class="game-container">
-          <h2> Game: </h2>
-          <iframe id="gomoku" src="/Games/Gomoku Web Build/" name="" width="640" height="480" frameborder="0" marginheight="0" scrolling="no"></iframe>
-      </div>
-
-      <!--What I learned-->
-      <div class="learnDiv">
-          <h2>What I Learned:</h2>
-          <p class="learned">While some projects do not have a clear learning focus, this is not one of them. The focus of this game was the AI. Over 500 lines, it is the most complicated artificial intelligence I have ever created. I take pride in the fact that it is difficult to beat. This project taught me so much about the development of computer intelligence, and I will remember it fondly for that reason.</p>
-      </div>
-
-      <!-- Footer Section -->
-      <footer class="footer">
-          <div id="footerFillIn"></div>
-      </footer>
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div id="footerFillIn"></div>
+        </footer>
 </body>
-    <script src="/footerLoader.js"></script>
+    <script src="/headerFooterLoader.js"></script>
     <script src="/data.js"></script>
     <script src="/fillDropdowns.js"></script>
 </html>
