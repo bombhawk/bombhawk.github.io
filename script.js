@@ -1,5 +1,3 @@
-console.log(opuses, games, software);
-//HTML VARIABLES
 //GAMES
 //Left game Div
 let gameLeft = document.getElementById("gameLeft");

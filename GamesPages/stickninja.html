@@ -38,39 +38,29 @@
     <!--End navbar-->
   
   <center>
-    <!--Title-->
-    <div class="contentContainer">
-      <h1 class="pageTitle">Gomoku (2025)</h1>
-    </div>
-
-    <!--Game-->
-    <div class="game-container">
-      <h2> Game: </h2>
-      <iframe id="gomoku" src="/Games/Gomoku Web Build/" name="" width="640" height="480" frameborder="0" marginheight="0" scrolling="no"></iframe>
-    </div>
-
-    <!--What I learned-->
-    <div class="learnDiv">
-      <h2>What I Learned:</h2>
-      <p class="learned">This project was my first time delving into a platformer game. As such, I learned a lot about programming physics and collisions in the Gamemaker engine.</p>
-    </div>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-social">
-          <a href="https://github.com/bombhawk"  class="footerLink" target="_blank"> GitHub </a>
-          <a href="https://www.linkedin.com/in/kamryn-kramer-06500b345/" target="_blank">LinkedIn</a>
-          <a href="mailto:kamkramer@gmail.com" class="footerLink"> Email </a>
-          <a href="https://x.com/bombhawkinator" target="_blank" class="footerLink"> Twitter </a>
-          <a href="https://bombhawk.itch.io/" target="_blank" class="footerLink"> Itch.io </a>
-        </div>
+      <!--Title-->
+      <div class="contentContainer">
+          <h1 class="pageTitle">Gomoku (2025)</h1>
       </div>
 
-      <div class="footerBottom">
-        <h3>&copy; 2025 Kamryn Kramer | All Rights Reserved</h3>
+      <!--Game-->
+      <div class="game-container">
+          <h2> Game: </h2>
+          <iframe id="gomoku" src="/Games/Gomoku Web Build/" name="" width="640" height="480" frameborder="0" marginheight="0" scrolling="no"></iframe>
       </div>
-    </footer>
-  </body>
-  <script src="/data.js"></script>
-  <script src="/fillDropdowns.js"></script>
+
+      <!--What I learned-->
+      <div class="learnDiv">
+          <h2>What I Learned:</h2>
+          <p class="learned">This project was my first time delving into a platformer game. As such, I learned a lot about programming physics and collisions in the Gamemaker engine.</p>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="footer">
+          <div id="footerFillIn"></div>
+      </footer>
+</body>
+    <script src="/footerLoader.js"></script>
+    <script src="/data.js"></script>
+    <script src="/fillDropdowns.js"></script>
 </html>

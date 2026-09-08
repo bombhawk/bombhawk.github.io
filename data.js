@@ -1,6 +1,7 @@
 //Data file
 //Magnum Opuses Array
 let opuses = [
+    { link:"/GamesPages/bulletHell2.html", image: "Images/marcArt.jpg", name: "Fistful of Pixels (2025-2026)", description: "A top-down shooter with a metroidvania map I am currently developing." },
   {link:"/GamesPages/bulletHell.html", image:"Images/marcArt.jpg", name:"The Good, The Bad, and The Pixely (2024-2025)", description:"A top-down shooter with an emphasis on boss fights I started developing during the summer of 2024."},
   {link:"/Software/wordle/wordle.html", image:"Images/wordleThumbnail.png", name:"Wordle (2025)", description:"A remake of the popular online puzzle game Wordle."},
   {link:"/Software/robot.html", image:"Images/croppedRobot.png", name:"Project Spyn Robot (2023)", description:"A maze solving robot I programmed and constructed in a small team for my intro to engineering class."},
@@ -27,6 +28,6 @@ let software = [
   {link:"/Software/passGen/passwordGenerator.html", image:"Images/passGenCover.png", name:"Password Generator (2022)", description:"The program I made as my Performance Task for AP Computer Science Principles."},
 ];
 
-/*
+/* Template:
 {link:"", image:"Images/croppedUnderConstruction.png", name:"Under Construction", description:"Check back later for new projects!"}
 */
