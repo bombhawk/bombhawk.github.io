@@ -1,4 +1,3 @@
-console.log(opuses, games, software);
 //FUNCTIONS
 //Draw page on load
 window.onload = function drawPage() {

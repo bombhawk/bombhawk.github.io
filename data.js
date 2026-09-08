@@ -1,7 +1,7 @@
 //Data file
 //Magnum Opuses Array
 let opuses = [
-  {link:"/GamesPages/bulletHell2.html", image: "Images/marcArt.jpg", name: "Fistful of Pixels (2025-2026)", description: "An expansion of my previous game, 'The Good, the Bad, and the Pixely' I am currently developing, taking its gameplay but adding more content and a giant world to explore." },
+  { link:"/GamesPages/bulletHell2.html", image: "Images/Cowboy Sticker.png", name: "Fistful of Pixels (2025-2026)", description: "An expansion of my previous game, 'The Good, the Bad, and the Pixely' I am currently developing, taking its gameplay but adding more content and a giant world to explore." },
   {link:"/GamesPages/bulletHell.html", image:"Images/marcArt.jpg", name:"The Good, The Bad, and The Pixely (2024-2025)", description:"A top-down shooter with an emphasis on boss fights I started developing during the summer of 2024."},
   {link:"/Software/wordle/wordle.html", image:"Images/wordleThumbnail.png", name:"Wordle (2025)", description:"A remake of the popular online puzzle game Wordle."},
   {link:"/Software/robot.html", image:"Images/croppedRobot.png", name:"Project Spyn Robot (2023)", description:"A maze solving robot I programmed and constructed in a small team for my intro to engineering class."},
@@ -10,7 +10,7 @@ let opuses = [
 
 //Games array
 let games = [
-  {link: "/GamesPages/bulletHell2.html", image: "Images/marcArt.jpg", name: "Fistful of Pixels (2025-2026)", description: "An expansion of my previous game, 'The Good, the Bad, and the Pixely' I am currently developing, taking its gameplay but adding more content and a giant world to explore." },
+  { link:"/GamesPages/bulletHell2.html", image: "Images/Cowboy Sticker.png", name: "Fistful of Pixels (2025-2026)", description: "An expansion of my previous game, 'The Good, the Bad, and the Pixely' I am currently developing, taking its gameplay but adding more content and a giant world to explore." },
   {link:"/GamesPages/bulletHell.html", image:"Images/marcArt.jpg", name:"The Good, The Bad, and The Pixely (2024-2025)", description:"A top-down shooter with an emphasis on boss fights I started developing during the summer of 2024."},
   {link:"/GamesPages/stickninja.html", image:"Images/Stick Ninja Cover.gif", name:"Stick Ninja (2025)", description:"A small platformer game I made for my game development class final project."},
   {link:"/GamesPages/gomoku.html", image:"Images/gomokuImage.png", name:"Gomoku (2025)", description:"A game that started as a small class project but became my first foray into artificial intelligence."},
