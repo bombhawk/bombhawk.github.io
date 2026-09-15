@@ -2,10 +2,31 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Kamryn Kramer: A Portfolio</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kamryn Kramer: A Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Mailing List JS Code-->
+    <script>
+          (function (s, e, n, d, er) {
+            s['Sender'] = er;
+            s[er] = s[er] || function () {
+              (s[er].q = s[er].q || []).push(arguments)
+            }, s[er].l = 1 * new Date();
+            s[er].on = function(event, callback) {
+              s[er].listeners = s[er].listeners || {};
+              (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+            };
+            var a = e.createElement(n),
+                m = e.getElementsByTagName(n)[0];
+            a.async = 1;
+            a.src = d;
+            m.parentNode.insertBefore(a, m)
+          })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+          sender('7189f1cf1c1678')
+    </script>
+
 </head>
 
 <body>
@@ -21,7 +42,7 @@
             </video>
 
             <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
+                <h1>Kamryn Kramer: A Portfolio</h1>
                 <p>Showcasing my best work throughout my years of game, web, and software development.</p>
                 <h2>Here's what I'm working on now:</h2>
                 <a href="GamesPages/bulletHell2.html">
@@ -159,6 +180,13 @@
                     <img src="Images/Arrow Right.gif" class="imgHover">
                 </button>
             </div>
+        </div>
+
+        <hr>
+
+        <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+            <!-- Mailing List Section-->
+            <div style="text-align: left" class="sender-form-field" data-sender-form-id="en5p8R"></div>
         </div>
 
         <!-- About Section -->
